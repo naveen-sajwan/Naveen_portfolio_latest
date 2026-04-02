@@ -4,6 +4,7 @@ import path from "path"
 
 export default defineConfig({
   plugins: [react()],
+  base: '/client/dist/',  // This tells Vite to prefix all asset paths
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
